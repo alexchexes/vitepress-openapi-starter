@@ -1,0 +1,26 @@
+---
+  openapi: "3.0.0"
+  info: 
+    title: "Minimal API"
+    version: "1.0.0"
+  paths: 
+    /example: 
+      summary: "Example endpoint"
+      description: "This path supports both GET and POST methods."
+      get: 
+        responses: 
+          200: 
+            description: "OK"
+            content: 
+              application/json: 
+                schema: 
+                  type: "string"
+      post: 
+        responses: 
+          201: 
+            description: "Created"
+            content: 
+              application/json: 
+                schema: 
+                  type: "string"
+

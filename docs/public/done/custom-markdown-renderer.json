@@ -1,0 +1,30 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Example API",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/api": {
+      "get": {
+        "summary": "Example Operation",
+        "operationId": "testLinks",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description":
+                    "This link comes from JSDoc: {@link https://github.com/vega/ts-json-schema-generator ts-json-schema-generator}, because schemas for this spec were generated with that tool.\n\n@see https://github.com/vega/ts-json-schema-generator",
+                  "type": "object"
+                }
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

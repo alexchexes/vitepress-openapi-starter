@@ -1,0 +1,102 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "DaData.ru API",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/suggest/party": {
+      "servers": [
+        {
+          "url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs"
+        }
+      ],
+      "post": {
+        "tags": [
+          "suggest",
+          "party"
+        ],
+        "summary": "Подсказки по организациям",
+        "description": "Ищет компании и индивидуальных предпринимателей:\n- по ИНН, ОГРН и КПП;\n- названию (полному и краткому);\n- ФИО (для индивидуальных предпринимателей);\n- ФИО руководителя компании;\n- адресу до улицы\n",
+        "externalDocs": {
+          "url": "https://dadata.ru/api/suggest/party/"
+        },
+        "operationId": "suggestParty",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuggestPartyPayload"
+              },
+              "examples": {
+                "simple_query": {
+                  "value": {
+                    "query": "сбербанк"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SuggestPartyPayload": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "ACTIVE",
+                "BANKRUPT",
+                "LIQUIDATED",
+                "LIQUIDATING",
+                "REORGANIZING"
+              ]
+            },
+            "description": "Фильтр по статусу организации. API принимает массив. Например:\n- действующие: `[\"ACTIVE\"]`\n- ликвидируемые и ликвидированные: `[\"LIQUIDATING\", \"LIQUIDATED\"]`\n{@link https://confluence.hflabs.ru/pages/viewpage.action?pageId=206176335}"
+          },
+          "branch_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "MAIN",
+                  "BRANCH"
+                ]
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "MAIN",
+                    "BRANCH"
+                  ]
+                }
+              }
+            ],
+            "description": "Фильтр по типу филиала\n- `MAIN` - искать только по головным организациям\n- `BRANCH` - искать только по филиалам"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "description": "@see https://dadata.ru/api/suggest/party/\n@see https://confluence.hflabs.ru/pages/viewpage.action?pageId=204669120"
+      }
+    }
+  },
+  "tags": [],
+  "externalDocs": {},
+  "servers": []
+}

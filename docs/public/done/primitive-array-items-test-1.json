@@ -1,0 +1,109 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "DaData.ru API",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/suggest/party": {
+      "servers": [
+        {
+          "url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs"
+        }
+      ],
+      "post": {
+        "summary": "Example operation",
+        "operationId": "exampleOp",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "foo": {
+                    "type": "string",
+                    "description": "string with a constraint",
+                    "maxLength": 30
+                  },
+                  "bar": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "description": "string with a constraint",
+                      "maxLength": 30
+                    }
+                  },
+                  "baz": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "description": "string with a constraint",
+                        "maxLength": 30
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "a": {
+                            "type": "string",
+                            "description": "string with a constraint",
+                            "maxLength": 30
+                          },
+                          "b": {
+                            "type": "string",
+                            "description": "string with a constraint",
+                            "maxLength": 30
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "status": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "enum": ["ACTIVE", "BANKRUPT"]
+                    },
+                    "description": "Org status filter. API expects an array. For example:\n- active: `[\"ACTIVE\"]`\n- liquidating and liquidated: `[\"LIQUIDATING\", \"LIQUIDATED\"]`\n{@link https://example.com/docs/api/206176335}"
+                  },
+                  "branch_type": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                          "enum": ["MAIN", "BRANCH"]
+                      },
+                      {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "enum": ["MAIN", "BRANCH"]
+                        }
+                      }
+                    ],
+                    "description": "Filter by branch type\n- `MAIN` - only head branch\n- `BRANCH` - only other branches"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": [
+          "Default"
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Default",
+      "description": ""
+    }
+  ],
+  "externalDocs": {},
+  "servers": []
+}

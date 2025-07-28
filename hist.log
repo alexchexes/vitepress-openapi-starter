@@ -1,0 +1,500 @@
+   33  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   34  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   35  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   36  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   37  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   38  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   39  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   40  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   41  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   42  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   43  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   44  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   45  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   46  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   47  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   48  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   49  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   50  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   51  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   52  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   53  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   54  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   55  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   56  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   57  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   58  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   59  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   60  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   61  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   62  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   63  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   64  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   65  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   66  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   67  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   68  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   69  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   70  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   71  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   72  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   73  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   74  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   75  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   76  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   77  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   78  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   79  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   80  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   81  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   82  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   83  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   84  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   85  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   86  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   87  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   88  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   89  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   90  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   91  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   92  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   93  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   94  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   95  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   96  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   97  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   98  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+   99  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  100  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  101  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  102  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  103  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  104  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  105  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  106  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  107  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  108  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  109  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  110  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  111  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  112  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  113  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  114  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  115  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  116  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  117  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  118  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  119  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  120  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  121  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  122  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  123  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  124  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  125  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  126  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  127  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  128  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  129  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  130  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  131  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  132  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  133  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  134  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  135  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  136  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  137  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  138  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  139  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  140  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  141  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  142  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  143  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  144  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  145  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  146  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  147  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  148  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  149  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  150  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  151  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  152  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  153  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  154  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  155  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  156  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  157  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  158  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  159  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  160  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  161  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  162  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  163  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  164  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  165  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  166  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  167  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  168  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  169  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  170  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  171  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  172  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  173  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  174  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  175  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  176  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  177  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  178  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  179  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  180  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  181  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  182  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  183  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  184  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  185  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  186  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  187  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  188  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  189  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  190  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  191  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  192  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  193  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  194  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  195  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  196  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  197  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  198  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  199  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  200  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  201  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  202  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  203  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  204  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  205  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  206  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  207  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  208  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  209  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  210  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  211  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  212  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  213  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  214  history
+  215  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  216  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  217  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  218  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  219  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  220  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  221  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  222  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  223  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  224  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  225  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  226  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder" --runInBand
+  227  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  228  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  229  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  230  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  231  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  232  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  233  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  234  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  235  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  236  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  237  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  238  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  239  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  240  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  241  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  242  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  243  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  244  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  245  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  246  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  247  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  248  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  249  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  250  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  251  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  252  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  253  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  254  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  255  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  256  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  257  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  258  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  259  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  260  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  261  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  262  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  263  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  264  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  265  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  266  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  267  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  268  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  269  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  270  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  271  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  272  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  273  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  274  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  275  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  276  npm install
+  277  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  278  rm -rf node_modules
+  279  npm i
+  280  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  281  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  282  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  283  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  284  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  285  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  286  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  287  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  288  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  289  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  290  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  291  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  292  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  293  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  294  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  295  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  296  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  297  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  298  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  299  git apply patch
+  300  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  301  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-1" --runInBand
+  302  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  303  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-2" --runInBand
+  304  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-2" --runInBand
+  305  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-2" --runInBand
+  306  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-2" --runInBand
+  307  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-2" --runInBand
+  308  UPDATE_SCHEMA=true npm run test -- -t "temp-test-folder-2" --runInBand
+  309  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  310  npm test
+  311  npm test
+  312  UPDATE_SCHEMA=true npm run test -- -t "generic-valueof" --runInBand
+  313  UPDATE_SCHEMA=true npm run test -- -t "generic-internal" --runInBand
+  314  UPDATE_SCHEMA=true npm run test -- -t "generic-internal" --runInBand
+  315  UPDATE_SCHEMA=true npm run test -- -t "generic-internal" --runInBand
+  316  UPDATE_SCHEMA=true npm run test -- -t "generic-internal" --runInBand
+  317  UPDATE_SCHEMA=true npm run test -- -t "generic-internal" --runInBand
+  318  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex" --runInBand
+  319  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex" --runInBand
+  320  npm test
+  321  history
+  322  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  323  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  324  UPDATE_SCHEMA=true npm run test -- -t "union-of-unions" --runInBand
+  325  UPDATE_SCHEMA=true npm run test -- -t "union-of-unions" --runInBand
+  326  UPDATE_SCHEMA=true npm run test -- -t "type-union-of-unions" --runInBand
+  327  npm run test -- -t "type-union-of-unions" --runInBand
+  328  UPDATE_SCHEMA=true npm run test -- -t "type-union-of-unions" --runInBand
+  329  UPDATE_SCHEMA=true npm run test -- -t "type-union-of-unions" --runInBand
+  330  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  331  UPDATE_SCHEMA=true npm run test -- -t "type-literal-union" --runInBand
+  332  UPDATE_SCHEMA=true npm run test -- -t "type-literal-union" --runInBand
+  333  =true npm run test -- -t "type-literal-union-unions" --runInBand
+  334  git apply patch
+  335  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-untyped" --runInBand
+  336  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-untyped" --runInBand
+  337  UPDATE_SCHEMA=true npx jest --verbose test/vega-lite.test.ts
+  338  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-" --runInBand
+  339  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-inf" --runInBand
+  340  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-inf" --runInBand
+  341  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-inf" --runInBand
+  342  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  343  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-inf" --runInBand
+  344  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-default-infer" --runInBand
+  345  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-default-infer" --runInBand
+  346  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-untyped" --runInBand
+  347  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-inf" --runInBand
+  348  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  349  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  350  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  351  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  352  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  353  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  354  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  355  UPDATE_SCHEMA=true npm run test -- -t "function-parameters-infer-type" --runInBand
+  356  UPDATE_SCHEMA=true npm run test -- -t "generic-valueof" --runInBand
+  357  UPDATE_SCHEMA=true npm run test -- -t "generic-valueof" --runInBand
+  358  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-co" --runInBand
+  359  UPDATE_SCHEMA=true npm run test -- -t "generic-" --runInBand
+  360  UPDATE_SCHEMA=true npm run test -- -t "generic-" --runInBand
+  361  UPDATE_SCHEMA=true npm run test -- -t "generic-" --runInBand
+  362  UPDATE_SCHEMA=true npm run test -- -t "generic-" --runInBand
+  363  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  364  UPDATE_SCHEMA=true npm run test -- -t "generic-" --runInBand
+  365  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  366  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  367  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  368  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  369  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  370  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  371  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  372  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  373  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  374  UPDATE_SCHEMA=true npm run test -- -t "generic-"
+  375  npm test
+  376  UPDATE_SCHEMA=true npm run test -- -t "type-conditional-inheritance"
+  377  UPDATE_SCHEMA=true npm run test -- -t "type-conditional-inheritance"
+  378  UPDATE_SCHEMA=true npm run test -- -t "type-conditional-inheritance"
+  379  UPDATE_SCHEMA=true npm run test -- -t "type-conditional-inheritance"
+  380  npm test
+  381  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex-star"
+  382  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex-star"
+  383  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex-star"
+  384  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex-star"
+  385  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex-star"
+  386  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  387  UPDATE_SCHEMA=true npm run test -- -t "generic-valueof"
+  388  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex" && npm run test -- -t "generic-valueof"
+  389  UPDATE_SCHEMA=true npm run test -- -t "generic-valueof"
+  390  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  391  npm build
+  392  realpath .
+  393  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  394  UPDATE_SCHEMA=true npm run test -- -t "generic-valueof"
+  395  git diff next HEAD > diff.diff
+  396  code diff.diff 
+  397  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  398  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  399  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  400  npm test
+  401  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  402  UPDATE_SCHEMA=true npm run test -- -t "generic-mapped-complex"
+  403  npm test
+  404  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  405  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  406  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  407  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  408  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  409  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  410  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  411  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  412  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  413  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  414  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  415  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  416  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  417  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  418  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  419  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  420  UPDATE_SCHEMA=true npm run test -- -t "generic-helper-reused"
+  421  npm test
+  422  npm build
+  423  npm run build
+  424  npm test
+  425  git diff
+  426  history
+  427  history -a
+  428  history
+  429  history -a
+  430  git apply patch
+  431  git apply patch
+  432  npm run test -- -t "type-aliases-local-namespace"
+  433  UPDATE_SCHEMA=true npm run test -- -t "type-aliases-local-namespace"
+  434  git diff 1aad3580 HEAD --name-only
+  435  history 
+  436  history -a
+  437  c ..
+  438  c ..
+  439  git status
+  440  ll src
+  441  ll questions
+  442  ll src/questions
+  443  smerge .
+  444  git status
+  445  git pull
+  446  git -vv
+  447  git branch -vv
+  448  git checkut -b origin/master 
+  449  git checkout -b origin/master 
+  450  git branch
+  451  git branch -v
+  452  git branch -vv
+  453  git branch -a 
+  454  git status
+  455  git checkout -b remotes/origin/codex/create-app-to-practice-random-questions
+  456  git st
+  457  git status
+  458  git checkout master
+  459  git branch -d remotes/origin/codex/create-app-to-practice-random-questions
+  460  git checkout -b origin/codex/create-app-to-practice-random-questions
+  461  git checkout master
+  462  git branch
+  463  git branch --v
+  464  git branch -a
+  465  git fetch
+  466  git branch -d origin/codex/create-app-to-practice-random-questions
+  467  git fetch
+  468  git branch -a
+  469  git checkout -b codex/create-app-to-practice-random-questions origin/codex/create-app-to-practice-random-questions
+  470  git status
+  471  git status
+  472  git checkout -b codex/create-app-to-practice-random-questions origin/codex/create-app-to-practice-random-questions
+  473  pnpm dev
+  474  git status 
+  475  git ls src
+  476  git --ls-files src
+  477  git src/questions
+  478  git --help
+  479  ll src/questions
+  480  git status
+  481  cat .gitignore
+  482  ls src/questions
+  483  git grep questions
+  484  git grep app
+  485  grep Where must a vehicle drive
+  486  grep src/questions Where must a vehicle drive
+  487  grep src/questions/questions.json Where must a vehicle drive
+  488  grep src/questions/questions.json 'Where must a vehicle drive'
+  489  grep --help
+  490  git check-ignore src/questions/questions.json
+  491  git rm --cached src/questions
+  492  rm -rf .git/modules/src/questions
+  493  mv src/questions ../questions-backup
+  494  cp -r ../questions-backup src/questions
+  495  git status
+  496  git add src/questions
+  497  pnpm add @vueuse/core @vueuse/router
+  498  pnpm dev
+  499  pnpm i
+  500  pnpm dev
+  501  code .
+  502  smerge .
+  503  pnpm docs:dev
+  504  pnpm docs:dev
+  505  pnpm docs:dev
+  506  pnpm docs:dev
+  507  pnpm docs:dev
+  508  git status
+  509  git diff pnpm-lock.yaml
+  510  pnpm link /d/repos/vitepress-openapi
+  511  pnpm docs:dev
+  512  pnpm docs:dev
+  513  pnpm docs:dev
+  514  pnpm docs:dev
+  515  pnpm docs:dev
+  516  git status
+  517  rm pnpm-lock.yaml 
+  518  pnpm i
+  519  pnpm outdated
+  520  code package.json 
+  521  pnpm info vitepress-openapi
+  522  pnpm list vitepress-openapi
+  523  git status
+  524  rm pnpm-lock.yaml pnpm-workspace.yaml 
+  525  pnpm list vitepress-openapi
+  526  pnpm unlink vitepress-openapi
+  527  git status
+  528  pnpm i
+  529  pnpm list vitepress-openapi
+  530  pnpm dev
+  531  pnpm docs:dev
+  532  history > hist.log && code hist.log

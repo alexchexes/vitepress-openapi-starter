@@ -1,0 +1,157 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Argentine Rock Legends",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/suggest": {
+      "post": {
+        "tags": ["Artists"],
+        "summary": "POST /api/v1/suggest",
+        "operationId": "createArtist",
+        "requestBody": {
+          "description": "Get suh",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": { "type": "string" },
+                  "username": { "type": "string" },
+                  "status": { "type": "string" },
+
+                  "email": {
+                    "type": "string",
+                    "description": "User’s primary email address."
+                  },
+                  "phone": {
+                    "type": "string",
+                    "description": "Main contact telephone number."
+                  },
+                  "locale": {
+                    "type": "string",
+                    "description": "BCP 47 language‑region code (e.g. “en‑US”)."
+                  },
+
+                  "bio": {
+                    "type": "string",
+                    "description": "A short biography that can include markdown.\nSupports bulleted lists, links, and inline emphasis.\nKeep it concise—typically under 500 characters.\nApplications may render this field with rich text.\nRemember to sanitize input for security.\nEmpty value is allowed."
+                  },
+                  "profileImageUrl": {
+                    "type": "string",
+                    "description": "Fully‑qualified URL pointing to the user’s avatar image.\nThe image **should** be square and ≤ 2 MB.\nJPEG, PNG, and WebP formats are recommended.\nClients may cache this resource with ETag/Last‑Modified.\nIf not provided, a default placeholder MAY be shown.\nField can be updated independently of other data."
+                  },
+                  "website": {
+                    "type": "string",
+                    "description": "Personal or company homepage address supplied by the user.\nThe value MUST start with `http://` or `https://`.\nApplications may display this as a clickable link.\nAvoid automatically embedding untrusted content.\nValidation SHOULD trim surrounding whitespace.\nLeaving this blank is perfectly acceptable."
+                  },
+
+                  "address": {
+                    "type": "object",
+                    "properties": {
+                      "street": { "type": "string" },
+                      "city": { "type": "string" },
+                      "postalCode": { "type": "string" }
+                    }
+                  },
+                  "coordinates": {
+                    "type": "object",
+                    "properties": {
+                      "lat": { "type": "number" },
+                      "lng": { "type": "number" }
+                    }
+                  },
+                  "preferences": {
+                    "type": "object",
+                    "properties": {
+                      "theme": { "type": "string" },
+                      "notificationsEnabled": { "type": "boolean" }
+                    }
+                  },
+
+                  "settings": {
+                    "type": "object",
+                    "description": "User interface and behavior settings.",
+                    "properties": {
+                      "darkMode": { "type": "boolean" },
+                      "language": { "type": "string" }
+                    }
+                  },
+                  "emergencyContact": {
+                    "type": "object",
+                    "description": "Person to reach in case of emergency.",
+                    "properties": {
+                      "name": { "type": "string" },
+                      "phone": { "type": "string" }
+                    }
+                  },
+                  "subscription": {
+                    "type": "object",
+                    "description": "Current billing plan information.",
+                    "properties": {
+                      "plan": { "type": "string" },
+                      "renewalDate": { "type": "string", "format": "date" }
+                    }
+                  },
+
+                  "metrics": {
+                    "type": "object",
+                    "description": "Aggregated usage and performance data collected by the application.\nIncludes counts such as page views, session length, and feature usage.\nValues are typically updated by analytics pipelines.\nAll numbers are integers or ISO‑8601 timestamps as strings.\nThese metrics fuel dashboards and reports.\nThe object may be empty for new accounts.",
+                    "properties": {
+                      "lastLogin": { "type": "string", "format": "date-time" },
+                      "pageViews": { "type": "integer" }
+                    }
+                  },
+                  "permissions": {
+                    "type": "object",
+                    "description": "Role‑based access controls granted to the user.\n`role` defines coarse privileges (e.g. `admin`, `viewer`).\n`allowedActions` refines specific endpoints or UI features.\nClients MUST treat this as authoritative for authorization.\nChanges take effect immediately after token refresh.\nEnsure fine‑grained scopes are regularly reviewed.",
+                    "properties": {
+                      "role": { "type": "string" },
+                      "allowedActions": {
+                        "type": "array",
+                        "items": { "type": "string" }
+                      }
+                    }
+                  },
+                  "socialLinks": {
+                    "type": "object",
+                    "description": "Collection of publicly visible profile URLs.\nKeys SHOULD be well‑known platform names in lower‑case.\nValues MUST be fully‑qualified URLs controlled by the user.\nClients may render icons based on the key set.\nAdd or remove items freely; unknown keys are ignored.\nLeaving all links blank is allowed.",
+                    "properties": {
+                      "twitter": { "type": "string" },
+                      "linkedin": { "type": "string" },
+                      "github": { "type": "string" }
+                    }
+                  },
+                  "testNew": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": "Some description"
+                  },
+                  "testNew2": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "Some description"
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {},
+  "servers": [],
+  "tags": []
+}

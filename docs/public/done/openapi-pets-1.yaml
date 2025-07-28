@@ -1,0 +1,65 @@
+openapi: "3.0.4"
+info: 
+  title: "Animals API"
+  version: "0.1.0"
+paths: 
+  /api/cats: 
+    get: 
+      tags: 
+        - "mammal"
+        - "cat"
+        - "fluffy"
+      summary: "Find a cat"
+      operationId: "findCat"
+      responses: 
+        200: 
+          description: "OK"
+  /api/sphynxs: 
+    get: 
+      tags: 
+        - "mammal"
+        - "cat"
+        - "bald"
+      summary: "Find a sphynx cat"
+      operationId: "findSphynx"
+      responses: 
+        200: 
+          description: "OK"
+  /api/fancyrats: 
+    get: 
+      tags: 
+        - "mammal"
+        - "fluffy"
+        - "small"
+        - "rat"
+      summary: "Find a fancy rat"
+      operationId: "findFancyRat"
+      responses: 
+        200: 
+          description: "OK"
+  /api/lizards: 
+    get: 
+      tags: 
+        - "small"
+        - "reptile"
+        - "lizard"
+      summary: "Find a lizard"
+      operationId: "findLizard"
+      responses: 
+        200: 
+          description: "OK"
+  /account/stats: 
+    get: 
+      summary: "Get user stats"
+      operationId: "accountStats"
+      responses: 
+        200: 
+          description: "OK"
+  /status: 
+    get: 
+      summary: "Check status"
+      operationId: "checkStatus"
+      responses: 
+        200: 
+          description: "OK"
+

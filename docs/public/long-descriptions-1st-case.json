@@ -1,0 +1,111 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Argentine Rock Legends",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/suggest": {
+      "post": {
+        "tags": [
+          "Artists"
+        ],
+        "summary": "POST /api/v1/suggest",
+        "operationId": "createArtist",
+        "requestBody": {
+          "description": "Get suh",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Query string",
+                    "maxLength": 300
+                  },
+                  "count": {
+                    "type": "number",
+                    "description": "Maximum number of results to fetch",
+                    "minimum": 1,
+                    "maximum": 20,
+                    "default": 10
+                  },
+                  "filters": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "ACTIVE",
+                            "BANKRUPT",
+                            "LIQUIDATED",
+                            "LIQUIDATING",
+                            "REORGANIZING",
+                            "SUSPENDED"
+                          ],
+                          "description": "Organization status"
+                        },
+                        "type": {
+                          "type": "string",
+                          "enum": [
+                            "LEGAL",
+                            "INDIVIDUAL"
+                          ],
+                          "description": "Organization type"
+                        }
+                      }
+                    },
+                    "description": "Filters work on fields `status` (organization status) and `type` (organization type).\n\nIf both filters are required, you have to pass not separate filter objects with one field (`status` or `type`) in each, but a cortessian product of all combinations of `type` + `status`. See an example:\n\n❌ Wrong:\n`[{ type: 'LEGAL' }, { status: 'BANKRUPT' }, { status: 'SUSPENDED' }]`\n\n✅ Correct:\n`[{ type: 'LEGAL', status: 'BANKRUPT' }, { type: 'LEGAL', status: 'SUSPENDED' }]`"
+                  },
+                  "foo": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "bar": {
+                          "type": "string",
+                          "enum": [
+                            "ACTIVE",
+                            "BANKRUPT",
+                            "LIQUIDATED",
+                            "LIQUIDATING",
+                            "REORGANIZING",
+                            "SUSPENDED"
+                          ],
+                          "description": "Organization status"
+                        },
+                        "baz": {
+                          "type": "string",
+                          "enum": [
+                            "LEGAL",
+                            "INDIVIDUAL"
+                          ],
+                          "description": "Organization type"
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "query"
+                ],
+                "description": "@see https://example.com/api/suggest/"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {},
+  "servers": [],
+  "tags": []
+}

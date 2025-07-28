@@ -1,0 +1,71 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Random Pet API",
+    "version": "1.1.0"
+  },
+  "paths": {
+    "/pets/random": {
+      "get": {
+        "summary": "Get a random pet plus a tag",
+        "operationId": "getRandomPet",
+        "responses": {
+          "200": {
+            "description": "A cat (object) or just its numeric ID, plus either a tag object or a simple text label",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PetWithTag"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PetWithTag": {
+        "type": "object",
+        "properties": {
+          "pet": {
+            "description": "Full pet object **or** numeric pet ID",
+            "oneOf": [
+              { "$ref": "#/components/schemas/Cat" },
+              { "type": "integer", "description": "Pet ID" }
+            ]
+          },
+          "tag": {
+            "description": "Structured tag object **or** plain-text label",
+            "anyOf": [
+              { "$ref": "#/components/schemas/TagInfo" },
+              { "type": "string", "description": "Free-text label" }
+            ]
+          }
+        },
+        "required": ["pet", "tag"]
+      },
+
+      "Cat": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "enum": ["cat"] },
+          "meowsPerMinute": { "type": "integer", "example": 35 }
+        },
+        "required": ["type", "meowsPerMinute"],
+        "description": "A simple cat with 'type' and 'meowsPerMinute' property"
+      },
+
+      "TagInfo": {
+        "type": "object",
+        "properties": {
+          "label": { "type": "string", "example": "adopt-me" },
+          "importance": { "type": "integer", "example": 5 }
+        },
+        "required": ["label"],
+        "description": "Some description of TagInfo..."
+      }
+    }
+  }
+}

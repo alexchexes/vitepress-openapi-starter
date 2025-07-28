@@ -1,0 +1,621 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+        "title": "Лидогенератор партнеров B2B. API по управлению лидами",
+        "version": "1.1.0"
+    },
+    "servers": [
+        {
+            "url": "https://gw-pub.mapic.vimpelcom.ru:4443/leadgenerator-lead-api/v1"
+        }
+    ],
+    "security": [
+        {
+            "default": []
+        },
+        {
+            "gatewayBearerAuth": []
+        },
+        {
+            "gatewayOAuth2ClientCredentials": []
+        }
+    ],
+    "paths": {
+        "/external/leads": {
+            "post": {
+                "tags": [
+                    "Управление лидами"
+                ],
+                "summary": "Создание лида",
+                "description": "Данный метод предназначен для создания лида",
+                "operationId": "createLeads",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/LeadToCreate"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Созданный лид",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Lead"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "default": []
+                    },
+                    {
+                        "gatewayBearerAuth": []
+                    },
+                    {
+                        "gatewayOAuth2ClientCredentials": []
+                    }
+                ],
+                "x-auth-type": "Application & Application User",
+                "x-throttling-tier": "Unlimited"
+            }
+        },
+        "/external/leads/search": {
+            "post": {
+                "tags": [
+                    "Управление лидами"
+                ],
+                "summary": "Поиск лида",
+                "description": "Данный метод предназначен для поиска лидов",
+                "operationId": "searchLeads",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/SearchLeadRequest"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Результат поиска лидов",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/SearchLeadResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "default": []
+                    },
+                    {
+                        "gatewayBearerAuth": []
+                    },
+                    {
+                        "gatewayOAuth2ClientCredentials": []
+                    }
+                ],
+                "x-auth-type": "Application & Application User",
+                "x-throttling-tier": "Unlimited"
+            }
+        },
+        "/external/offers": {
+            "get": {
+                "tags": [
+                    "Управление продуктами"
+                ],
+                "summary": "Получить все продукты",
+                "description": "Данный метод предназначен для получения всех продуктов",
+                "operationId": "getOffers",
+                "responses": {
+                    "200": {
+                        "description": "Продукты",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Offer"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthorized",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "Forbidden",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Error"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "default": []
+                    },
+                    {
+                        "gatewayBearerAuth": []
+                    },
+                    {
+                        "gatewayOAuth2ClientCredentials": []
+                    }
+                ],
+                "x-auth-type": "Application & Application User",
+                "x-throttling-tier": "Unlimited"
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "LeadToCreate": {
+                "required": [
+                    "agreementNumber",
+                    "contact",
+                    "offers"
+                ],
+                "type": "object",
+                "properties": {
+                    "inn": {
+                        "pattern": "^(\\d{10}|\\d{12})$",
+                        "type": "string",
+                        "description": "ИНН клиента",
+                        "example": "7727563778"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Наименование клиента",
+                        "example": "ООО Тест"
+                    },
+                    "agreementNumber": {
+                        "type": "string",
+                        "description": "Номер договора",
+                        "example": "ПМ123"
+                    },
+                    "offers": {
+                        "type": "array",
+                        "description": "Продукты, заинтересовавшие будущего клиента",
+                        "items": {
+                            "uniqueItems": true,
+                            "type": "string",
+                            "example": "1"
+                        }
+                    },
+                    "comment": {
+                        "type": "string",
+                        "description": "Комментарий для менеджера",
+                        "example": "комментарий"
+                    },
+                    "contact": {
+                        "$ref": "#/components/schemas/Contact"
+                    }
+                },
+                "description": "Описание лида для его создания"
+            },
+            "Lead": {
+                "required": [
+                    "agreementNumber",
+                    "contact",
+                    "created",
+                    "id",
+                    "modified",
+                    "offers"
+                ],
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Идентификатор",
+                        "example": "1"
+                    },
+                    "inn": {
+                        "pattern": "^(\\d{10}|\\d{12})$",
+                        "type": "string",
+                        "description": "ИНН клиента",
+                        "example": "7727563778"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Наименование клиента",
+                        "example": "ООО Тест"
+                    },
+                    "agreementNumber": {
+                        "type": "string",
+                        "description": "Номер договора",
+                        "example": "ПМ123"
+                    },
+                    "offers": {
+                        "type": "array",
+                        "description": "Продукты, заинтересовавшие будущего клиента",
+                        "items": {
+                            "type": "string",
+                            "example": "1"
+                        }
+                    },
+                    "comment": {
+                        "type": "string",
+                        "description": "Комментарий для менеджера",
+                        "example": "комментарий"
+                    },
+                    "contact": {
+                        "$ref": "#/components/schemas/Contact"
+                    },
+                    "lifecycleStatus": {
+                        "$ref": "#/components/schemas/LeadStatus"
+                    },
+                    "created": {
+                        "type": "string",
+                        "description": "Дата создания",
+                        "format": "date-time",
+                        "example": "2024-12-27T13:07:10.484Z"
+                    },
+                    "modified": {
+                        "type": "string",
+                        "description": "Дата изменения",
+                        "format": "date-time",
+                        "example": "2024-12-27T13:07:10.484Z"
+                    }
+                },
+                "description": "Лид"
+            },
+            "Contact": {
+                "required": [
+                    "name",
+                    "phone"
+                ],
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "ФИО контактного лица",
+                        "example": "Иванов Василий Петрович"
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Номер телефона контактного лица",
+                        "example": "9101235678"
+                    }
+                },
+                "description": "Данные по контактному лицу"
+            },
+            "LeadStatus": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Идентификатор",
+                        "example": "NEW CASE"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Наименование",
+                        "example": "Новый"
+                    }
+                },
+                "description": "Статус лида\n\nОписание статусов:\n\n| Идентификатор   | Наименование           | Описание                                           |\n|-----------------|-----------------------|----------------------------------------------------|\n| NEW_LEAD        | Новый лид              | Лид успешно создан, стоит в очереди на обработку   |\n| DUBLICATE       | Дубль                  | Лид уже есть в системе                             |\n| IN_PROGRESS     | В обработке            | Лид находится в работе у менеджера                 |\n| REJECTED        | Отклонён               | Клиент отказался от подключения услуг              |\n| CP_DEVELOPMENT  | Проработка КП          | Подготовка коммерческого предложения               |\n| PARTIAL_SUCCESS | Частичный успех        | Часть услуг успешно подключена клиенту             |\n| SUCCESS         | Успех                  | Услуги успешно подключены клиенту                  |\n"
+            },
+            "SearchLeadRequest": {
+                "required": [
+                    "agreementNumber"
+                ],
+                "type": "object",
+                "properties": {
+                    "agreementNumber": {
+                        "type": "string",
+                        "description": "Фильтр по номеру договора",
+                        "example": "ПМ123"
+                    },
+                    "created": {
+                        "$ref": "#/components/schemas/Period"
+                    },
+                    "limit": {
+                        "maximum": 1000,
+                        "minimum": 1,
+                        "type": "integer",
+                        "description": "Количество запрашиваемых данных",
+                        "format": "int32",
+                        "example": 100,
+                        "default": 100
+                    },
+                    "offset": {
+                        "minimum": 0,
+                        "type": "integer",
+                        "description": "Номер начальной записи, с которой требуется получить данные",
+                        "format": "int32",
+                        "example": 0,
+                        "default": 0
+                    }
+                },
+                "description": "Запрос на поиск лидов"
+            },
+            "SearchLeadResponse": {
+                "required": [
+                    "content",
+                    "contentLimit",
+                    "contentOffset",
+                    "totalCount"
+                ],
+                "type": "object",
+                "properties": {
+                    "totalCount": {
+                        "minimum": 0,
+                        "type": "integer",
+                        "description": "Общее количество данных подходящих под фильтр",
+                        "format": "int32",
+                        "example": 100
+                    },
+                    "contentLimit": {
+                        "maximum": 1000,
+                        "minimum": 1,
+                        "type": "integer",
+                        "description": "Количество запрошенных данных",
+                        "format": "int32",
+                        "example": 100
+                    },
+                    "contentOffset": {
+                        "minimum": 0,
+                        "type": "integer",
+                        "description": "Номер начальной записи, с которой получены данные",
+                        "format": "int32",
+                        "example": 0
+                    },
+                    "content": {
+						"type": "array",
+							"items": {
+								"$ref": "#/components/schemas/Lead"
+							}
+                    }
+                },
+                "description": "Запрос на поиск лидов"
+            },
+            "Offer": {
+                "required": [
+                    "connectionType",
+                    "id",
+                    "name"
+                ],
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Идентификатор продукта",
+                        "example": "1"
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Наименование продукта",
+                        "example": "Услуга 800"
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Описание продукта",
+                        "example": "Услуга «8-800» (Бесплатный вызов)"
+                    },
+                    "connectionType": {
+                        "type": "string",
+                        "description": "Тип подключения",
+                        "enum": [
+                            "MOBILE",
+                            "FIXED"
+                        ]
+                    }
+                },
+                "description": "Продукт"
+            },
+            "Period": {
+                "type": "object",
+                "properties": {
+                    "from": {
+                        "type": "string",
+                        "description": "От",
+                        "format": "date-time",
+                        "example": "2024-12-27T13:07:10.484Z"
+                    },
+                    "to": {
+                        "type": "string",
+                        "description": "До",
+                        "format": "date-time",
+                        "example": "2024-11-27T13:07:10.484Z"
+                    }
+                },
+                "description": "Период"
+            },
+            "Error": {
+                "required": [
+                    "code",
+                    "reason",
+                    "traceId"
+                ],
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "type": "string",
+                        "description": "Код ошибки",
+                        "example": "BAD_REQUEST_EXCEPTION"
+                    },
+                    "reason": {
+                        "type": "string",
+                        "description": "Причина возникновения ошибки",
+                        "example": "Bad incoming request: offers"
+                    },
+                    "system": {
+                        "type": "string",
+                        "description": "Код системы",
+                        "example": "BEELEGO-LG"
+                    },
+                    "service": {
+                        "type": "string",
+                        "description": "Код сервиса",
+                        "example": "leadgenerator"
+                    },
+                    "traceId": {
+                        "type": "string",
+                        "description": "Идентификатор трассировки запроса",
+                        "example": "39351a83-6fbd-4769-a704-98614f3b1042"
+                    },
+                    "created": {
+                        "type": "string",
+                        "description": "Дата возникновения ошибки",
+                        "format": "date-time",
+                        "example": "2024-12-27T13:07:10.484Z"
+                    }
+                },
+                "description": "Ошибка"
+            }
+        },
+        "securitySchemes": {
+            "default": {
+                "type": "oauth2",
+                "flows": {
+                    "implicit": {
+                        "authorizationUrl": "https://gw-pub.mapic.vimpelcom.ru:4443/authorize",
+                        "scopes": {}
+                    }
+                }
+            },
+            "gatewayBearerAuth": {
+                "type": "http",
+                "scheme": "bearer",
+                "bearerFormat": "JWT"
+            },
+            "gatewayOAuth2ClientCredentials": {
+                "type": "oauth2",
+                "description": "See https://bwiki.beeline.ru/pages/viewpage.action?pageId=185152605",
+                "flows": {
+                    "clientCredentials": {
+                        "tokenUrl": "https://gw-pub.mapic.vimpelcom.ru:4443/gw-auth/v1/token",
+                        "scopes": {}
+                    }
+                }
+            }
+        }
+    },
+    "x-auth-type": "Application & Application User",
+    "x-wso2-api-trace": false,
+    "x-wso2-api-analytics": false,
+    "x-gateway-auth-header": "Authorization"
+}

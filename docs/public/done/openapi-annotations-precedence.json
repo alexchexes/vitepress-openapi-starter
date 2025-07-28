@@ -1,0 +1,68 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Example API",
+    "version": "0.1.0"
+  },
+  "servers": [
+    {
+      "url": "https://mylongexamplesubdomain.example.com/restfullapi/v2_0_5/client",
+      "description": "In case you need admin API, use https://mylongexamplesubdomain.example.com/restfullapi/v2_0_5/admin please"
+    }
+  ],
+  "paths": {
+    "/pet": {
+      "post": {
+        "summary": "Get a random pet",
+        "operationId": "getPet",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Pet" } } }
+          }
+        }
+      }
+    },
+    "/pet/cat": {
+      "post": {
+        "summary": "Get a cat",
+        "operationId": "getCat",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/Cat" } } }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Pet": {
+        "type": "object",
+        "properties": {
+          "petType": { "type": "string", "enum": ["cat", "dog", "lizard"] },
+          "hasFur": {
+            "$ref": "#/components/schemas/furBoolean"
+          }
+        }
+      },
+      "Cat": {
+        "type": "object",
+        "properties": {
+          "petType": { "const": "cat" },
+          "hasFur": {
+            "$ref": "#/components/schemas/furBoolean",
+            "description": "Whether the cat has fur. True by default for most cats",
+            "default": true
+          }
+        }
+      },
+      "furBoolean": {
+        "description": "Whether the animal has fur (true), doesn't (false), or it's unknown or varies (null)",
+        "type": ["boolean", "null"],
+        "default": false
+      }
+    }
+  }
+}

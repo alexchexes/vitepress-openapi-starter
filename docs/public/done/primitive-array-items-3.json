@@ -1,0 +1,239 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "DaData.ru API",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/suggest/party": {
+      "servers": [
+        {
+          "url": "https://suggestions.dadata.ru/suggestions/api/4_1/rs"
+        }
+      ],
+      "post": {
+        "summary": "Suggestion",
+        "operationId": "suggestParty",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuggestPartyPayload"
+              },
+              "examples": {
+                "simple_query": {
+                  "value": {
+                    "query": "mycompany"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        },
+        "tags": ["Default"]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SuggestPartyPayload": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": ["ACTIVE", "BANKRUPT"]
+            },
+            "description": "Org status filter. API expects an array. For example:\n- active: `[\"ACTIVE\"]`\n- liquidating and liquidated: `[\"LIQUIDATING\", \"LIQUIDATED\"]`\n{@link https://example.com/docs/api/206176335}"
+          },
+          "branch_type": {
+            "anyOf": [
+              {
+                "type": "string",
+                  "enum": ["MAIN", "BRANCH"]
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": ["MAIN", "BRANCH"]
+                }
+              }
+            ],
+            "description": "Filter by branch type\n- `MAIN` - only head branch\n- `BRANCH` - only other branches"
+          },
+          "username": {
+            "description": "Either a username or null",
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 3
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "score": {
+            "description": "Numeric score (number or numeric string)",
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "string",
+                "pattern": "^\\d+(\\.\\d+)?$"
+              }
+            ]
+          },
+          "count": {
+            "description": "Whole‑number count",
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "string",
+                "pattern": "^[0-9]+$"
+              }
+            ]
+          },
+          "active": {
+            "description": "True/false flag or a yes/no string",
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "string",
+                "enum": ["yes", "no"]
+              }
+            ]
+          },
+          "nothing": {
+            "description": "Explicit null or the literal string \"none\"",
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string",
+                "const": "none"
+              }
+            ]
+          },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "ACTIVE",
+                    "BANKRUPT",
+                    "LIQUIDATED",
+                    "LIQUIDATING",
+                    "REORGANIZING",
+                    "SUSPENDED"
+                  ],
+                  "description": "Organization status"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["LEGAL", "INDIVIDUAL"],
+                  "description": "Organization type"
+                }
+              }
+            },
+            "description": "Filters work on fields `status` (organization status) and `type` (organization type).\n\nIf both filters are required, you have to pass not separate filter objects with one field (`status` or `type`) in each, but a cortessian product of all combinations of `type` + `status`. See an example:\n\n❌ Wrong:\n`[{ type: 'LEGAL' }, { status: 'BANKRUPT' }, { status: 'SUSPENDED' }]`\n\n✅ Correct:\n`[{ type: 'LEGAL', status: 'BANKRUPT' }, { type: 'LEGAL', status: 'SUSPENDED' }]`"
+          },
+          "tags": {
+            "description": "Either an array of strings or a single string",
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "profile": {
+            "description": "Nested object or null",
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "age": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "bio": {
+                    "type": "string"
+                  }
+                },
+                "required": ["age"],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "orders": {
+            "description": "Array of order objects or an array of IDs",
+            "anyOf": [
+              {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "total": {
+                      "type": "number",
+                      "minimum": 0
+                    }
+                  },
+                  "required": ["id", "total"],
+                  "additionalProperties": false
+                }
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          }
+        },
+        "required": ["query"],
+        "description": "@see https://example.com/docs/api/345678"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Default",
+      "description": ""
+    }
+  ],
+  "externalDocs": {},
+  "servers": []
+}
