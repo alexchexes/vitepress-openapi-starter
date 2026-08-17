@@ -1,0 +1,56 @@
+openapi: 3.1.0
+info:
+  title: Simple Animal API
+  version: 1.0.0
+  description: Demonstrates `oneOf` for polymorphic responses
+
+paths:
+  /animals:
+    get:
+      summary: Get a random animal
+      operationId: getAnimal
+      responses:
+        '200':
+          description: Returns either a Cat or a Dog
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Animal'
+
+components:
+  schemas:
+    # Polymorphic wrapper
+    Animal:
+      oneOf:
+        - $ref: '#/components/schemas/Cat'
+        - $ref: '#/components/schemas/Dog'
+      discriminator:
+        propertyName: type
+        mapping:
+          cat: '#/components/schemas/Cat'
+          dog: '#/components/schemas/Dog'
+
+    # Concrete variant 1
+    Cat:
+      type: object
+      properties:
+        type:
+          type: string
+          enum: [cat]
+        meowsPerMinute:
+          type: integer
+          example: 42
+      required: [type, meowsPerMinute]
+
+    # Concrete variant 2
+    Dog:
+      type: object
+      properties:
+        type:
+          type: string
+          enum: [dog]
+        barkVolume:
+          type: integer
+          description: Loudness in decibels
+          example: 87
+      required: [type, barkVolume]
